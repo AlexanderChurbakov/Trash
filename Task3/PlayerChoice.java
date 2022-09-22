@@ -1,27 +1,11 @@
-package EasyCodeLectures.HomeWork.Lecture26Homeworks.Task3;
+package lecture29HomeWork.task3;
 
 import java.util.Scanner;
 
 public class PlayerChoice {
-
-    public int enterChoice() {
+    public int makeChoice() {
         Scanner scanner = new Scanner(System.in);
-        return scanner.nextInt();
-    }
-
-    public Level.Answers choice() {
-        Level.Answers result = Level.Answers.DEMO;
-        switch (enterChoice()) {
-            case 1:
-                result = Level.Answers.UP_STRENGTH;
-                break;
-            case 2:
-                result = Level.Answers.UP_SPEED;
-                break;
-            case 3:
-                result = Level.Answers.DEATH;
-                break;
-        }
-        return result;
+        int choice = scanner.nextInt();
+        return choice;
     }
 }
